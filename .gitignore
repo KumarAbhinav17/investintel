@@ -1,0 +1,6 @@
+data/raw/
+data/processed/
+data/rejected/
+.env
+__pycache__/
+.venv/
