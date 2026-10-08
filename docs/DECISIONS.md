@@ -46,3 +46,13 @@ This gives the project a consistent data-layer vocabulary from the beginning and
 
 The full bronze/silver/gold architecture will not be implemented during the MVP. The naming convention is being established now so that the project can evolve without renaming its data layers later.
 
+
+## ADR-002: NSE EOD Data Excluded from MVP
+
+NSE End-of-Day and Historical market data is currently treated as a paid data product. Therefore, it will not be used as the primary stock-price source for the ?0 MVP. Legitimate alternative sources are being evaluated before ingestion development begins.
+
+
+## ADR-002: NSE EOD Data Excluded from MVP
+
+NSE End-of-Day and Historical market data is currently treated as a paid data product. Therefore, it will not be used as the primary stock-price source for the ?0 MVP. Legitimate alternative sources are being evaluated before ingestion development begins.
+
