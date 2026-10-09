@@ -56,3 +56,21 @@ NSE End-of-Day and Historical market data is currently treated as a paid data pr
 
 NSE End-of-Day and Historical market data is currently treated as a paid data product. Therefore, it will not be used as the primary stock-price source for the ?0 MVP. Legitimate alternative sources are being evaluated before ingestion development begins.
 
+## ADR-003: Synthetic Data for Public Demo
+
+**Status:** Accepted
+
+**Context:** Public-display permissions for real financial market data have not been confirmed. The project must not depend on receiving permission or on an unverified third-party data provider.
+
+**Decision:**
+- The public demo will use synthetic financial data and clearly label it as simulated.
+- Synthetic prices will only be associated with fictional instruments.
+- Real-data imports will be supported in local mode for files the user is permitted to use.
+- Public deployment will not accept real-data uploads in the MVP.
+- Data-source integrations will be modular so an approved provider can be added later.
+- No production feature will depend on an unverified data source.
+
+**Consequences:** Development, testing, demonstration, and deployment can continue without external data permissions. Real-market-data functionality may be added later after the relevant rights and terms are verified.
+
+**Revisit condition:** Written permission and applicable licensing terms are verified for a specific source.
+
